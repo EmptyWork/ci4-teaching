@@ -1,0 +1,90 @@
+/* 
+    Copyright (c) 2023 - Stevarth
+    PWF - Pengenalan Views pada CodeIgniter4
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(200, 91%, 8%);
+  color: hsl(200, 91%, 70%);
+  line-height: 1.5;
+  font-family: "Roboto Slab", serif;
+  padding: 2em;
+}
+
+main {
+  padding: 1em;
+  border-left: 0.25em solid hsl(143, 91%, 90%);
+  margin-block: 1.5em;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  color: hsl(200, 91%, 99%);
+  line-height: 1em;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.h-font {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+p {
+  width: min(60ch, 100%);
+}
+
+code {
+  background-color: hsl(200, 91%, 0%);
+  padding: .2em .5em;
+  border-radius: .2em;
+}
+
+strong {
+  color: pink;
+}
+
+footer {
+  color: hsl(200, 91%, 30%);
+
+  :is(a) {
+    text-decoration: underline;
+    text-underline-offset: .5em;
+  }
+}
+
+a {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(200, 91%, 30%);
+  text-decoration: none;
+  &:is(:hover, :focus) {
+    color: hsl(200, 91%, 80%);
+  }
+}
+
+nav ul {
+  all: unset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2em .9em;
+}
+
+nav ul li {
+  all: unset;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+code .semi {
+  color: hsl(200, 30%, 40%);
+}
+
+code .token {
+  color:hsl(143, 91%, 90%);
+}
+
+code .string {
+  color:hsl(52, 30%, 40%);
+}
