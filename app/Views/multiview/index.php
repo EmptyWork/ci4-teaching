@@ -1,0 +1,1 @@
+<h1>Hello ini file index2</h1>
