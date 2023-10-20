@@ -8,6 +8,8 @@ class Page extends BaseController
 {
     public function index()
     {
-        return "ini dari file Page, dengan method index";
+        return view("layouts/header")
+                .view("index2")
+                .view("layouts/footer");
     }
 }
