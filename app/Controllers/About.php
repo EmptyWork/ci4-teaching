@@ -8,9 +8,10 @@ class About extends BaseController
 {
     public function index()
     {
-        return view("layouts/header")
-                .view("multiview/about/index")
-                .view("layouts/footer");
+        // return view("layouts/header")
+        //         .view("multiview/about/index")
+        //         .view("layouts/footer");
+        return view("layouting/about/index");
     }
 
     public function contact($param1 = null, $param2 = null)

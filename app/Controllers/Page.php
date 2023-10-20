@@ -8,8 +8,9 @@ class Page extends BaseController
 {
     public function index()
     {
-        return view("layouts/header")
-                .view("multiview/index")
-                .view("layouts/footer");
+        // return view("layouts/header")
+        //         .view("multiview/index")
+        //         .view("layouts/footer");
+        return view("layouting/index");
     }
 }
