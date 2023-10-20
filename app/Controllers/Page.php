@@ -9,7 +9,7 @@ class Page extends BaseController
     public function index()
     {
         return view("layouts/header")
-                .view("index2")
+                .view("multiview/index")
                 .view("layouts/footer");
     }
 }

@@ -9,7 +9,7 @@ class About extends BaseController
     public function index()
     {
         return view("layouts/header")
-                .view("index")
+                .view("multiview/about/index")
                 .view("layouts/footer");
     }
 
