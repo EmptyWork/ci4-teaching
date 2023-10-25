@@ -13,15 +13,11 @@ class About extends BaseController
 
     public function contact($data1 = null, $data2 = null): string
     {
-        $data = [
-            "username" => $data1,
-            "phone" => $data2
+        $data_parameter = [
+            "metode_komunikasi" => $data1,
+            "nomor_id" => $data2
         ];
 
-        // if (!isset($data1) && !isset($data2)) {
-        //     return view('about/index');
-        // }
-
-        return view('about/contact', $data);
+        return view('about/contact', $data_parameter);
     }
 }
