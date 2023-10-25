@@ -9,7 +9,7 @@
         Pada halaman ini bisa memuat segala keperluan untuk menambahkan <strong>data</strong> dan lain-lain.
     </p>
     <p>
-        Parameters yang kamu kirimkan adalah <?= $username ? "<code><span class=\"token\">data<span><span class=\"semi\">:</span><span class=\"string\">{$username}</span></code>" : "<code><span class=\"string\">tidak ada</span></code>" ?> dan <?= $phone ? "<code><span class=\"token\">data<span><span class=\"semi\">:</span><span class=\"string\">{$phone}</span></code>" : "<code><span class=\"string\">tidak ada</span></code>" ?>;
+        Parameters yang kamu kirimkan adalah <?= $metode_komunikasi ? "<code><span class=\"token\">data<span><span class=\"semi\">:</span><span class=\"string\">{$metode_komunikasi}</span></code>" : "<code><span class=\"string\">tidak ada</span></code>" ?> dan <?= $nomor_id ? "<code><span class=\"token\">data<span><span class=\"semi\">:</span><span class=\"string\">{$nomor_id}</span></code>" : "<code><span class=\"string\">tidak ada</span></code>" ?>;
     </p>
 </main>
 
