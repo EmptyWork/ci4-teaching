@@ -20,3 +20,8 @@ $routes->get('/about', 'About::index');
 $routes->get('/about/contact', 'About::contact');
 $routes->get('/about/contact/(:any)/(:num)', 'About::contact/$1/$2');
 $routes->get('/about/(:any)/(:num)', 'About::contact/$1/$2');
+
+$routes->get('/users/', 'PenggunaController::list');
+$routes->get('/users/new', 'PenggunaController::index');
+$routes->post('/users/new', 'PenggunaController::create');
+$routes->delete('/users/delete/(:num)', 'PenggunaController::delete/$1');
