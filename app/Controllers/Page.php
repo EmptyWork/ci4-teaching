@@ -21,8 +21,7 @@ class Page extends BaseController
             $list_of_users = $users->findAll();
         }
         
-        $user_data = $users->where("name", "Glend")->first();
-        return dd($list_of_users, $user_data['name']);
+        return dd($list_of_users);
 
         // return view("layouts/header")
         //         .view("multiview/index")
