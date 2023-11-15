@@ -25,3 +25,6 @@ $routes->get('/users/', 'PenggunaController::list');
 $routes->get('/users/new', 'PenggunaController::index');
 $routes->post('/users/new', 'PenggunaController::create');
 $routes->delete('/users/delete/(:num)', 'PenggunaController::delete/$1');
+$routes->get('/users/edit/(:num)', 'PenggunaController::edit/$1');
+$routes->post('/users/update/(:num)', 'PenggunaController::update/$1');
+$routes->get('/users/view/(:num)', 'PenggunaController::view/$1');
