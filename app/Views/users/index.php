@@ -2,6 +2,7 @@
 
 <?= $this->section('content') ?>
 <main>
+    <?= (session()->getFlashdata('pesan')) ?? "" ?>
     <table>
         <tr>
             <th>Nama</th>
@@ -20,6 +21,8 @@
                             <input type="hidden" name="_method" value="DELETE">
                             <button type="submit" onclick="return confirm(' kamu akan menghapuskan data ini')"> Hapus</button>
                         </form>
+                        <a href="/users/edit/<?= $data['id'] ?>"> Ubah </a>
+                        <a href="/users/view/<?= $data['id'] ?>"> Lihat </a>
                     </td>
                 </tr>
             <?php
